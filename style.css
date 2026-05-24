@@ -2843,402 +2843,8 @@ footer{
   }
 
 }
-/* =========================================
-   GLOBAL SCALE / DENSITY SYSTEM
-========================================= */
 
 
-/* DESKTOP */
-
-html{
-
-  font-size:90%;
-}
-
-
-/* GLOBAL CONTAINER WIDTH */
-
-.container,
-.hero,
-.about-hero,
-.services-hero,
-.process-section,
-.contact-section,
-.metrics-section,
-.gain-section{
-
-  max-width:1400px;
-
-  margin:auto;
-}
-
-
-/* REDUCE SECTION HEIGHT */
-
-section{
-
-  padding-top:55px !important;
-
-  padding-bottom:55px !important;
-}
-
-
-/* HERO */
-
-.hero{
-
-  min-height:72vh !important;
-
-  gap:40px !important;
-
-  padding-top:110px !important;
-
-  padding-bottom:45px !important;
-}
-
-
-/* HERO TITLE */
-
-.hero h1{
-
-  font-size:clamp(3.6rem, 5vw, 5.8rem) !important;
-
-  line-height:0.95 !important;
-}
-
-
-/* HERO DESCRIPTION */
-
-.hero-description{
-
-  max-width:620px !important;
-
-  line-height:1.7 !important;
-
-  font-size:1.05rem !important;
-}
-
-
-/* PROCESS SECTION */
-
-.process-grid{
-
-  gap:28px !important;
-}
-
-
-/* CONTACT */
-
-.contact-container{
-
-  gap:40px !important;
-}
-
-
-/* PHONE */
-
-.phone-wrapper{
-
-  transform:scale(0.88);
-
-  transform-origin:center;
-}
-
-
-/* ABOUT */
-
-.about-row{
-
-  gap:50px !important;
-}
-
-
-/* CAROUSEL */
-
-.company-carousel-section{
-
-  padding-top:10px !important;
-
-  padding-bottom:35px !important;
-}
-
-
-/* MOBILE */
-
-@media (max-width:768px){
-
-  html{
-
-    font-size:82%;
-  }
-
-
-  .hero{
-
-    min-height:auto !important;
-
-    padding-top:105px !important;
-
-    padding-bottom:30px !important;
-  }
-
-
-  .phone-wrapper{
-
-    transform:scale(0.68);
-
-    margin-top:-50px;
-
-    margin-bottom:-80px;
-  }
-
-
-  section{
-
-    padding-top:45px !important;
-
-    padding-bottom:45px !important;
-  }
-
-}
-/* =========================================
-   ULTRA COMPACT LAYOUT SYSTEM
-========================================= */
-
-
-/* GLOBAL */
-
-html{
-
-  font-size:88%;
-}
-
-
-body{
-
-  overflow-x:hidden;
-}
-
-
-
-/* SECTIONS */
-
-section{
-
-  padding-top:40px !important;
-
-  padding-bottom:40px !important;
-}
-
-
-
-/* HERO */
-
-.hero,
-.about-hero,
-.services-hero{
-
-  min-height:auto !important;
-
-  padding-top:95px !important;
-
-  padding-bottom:25px !important;
-}
-
-
-
-/* HERO CONTENT */
-
-.hero-content{
-
-  gap:18px !important;
-}
-
-
-.hero h1{
-
-  margin-bottom:16px !important;
-
-  line-height:0.92 !important;
-}
-
-
-.hero-description{
-
-  margin-bottom:20px !important;
-
-  line-height:1.6 !important;
-}
-
-
-
-/* BUTTONS */
-
-.hero-buttons{
-
-  margin-top:8px !important;
-}
-
-
-
-/* CAROUSEL */
-
-.company-carousel-section{
-
-  padding-top:0px !important;
-
-  padding-bottom:18px !important;
-}
-
-
-
-/* ABOUT */
-
-.about-row{
-
-  gap:32px !important;
-
-  padding-top:35px !important;
-
-  padding-bottom:35px !important;
-}
-
-
-
-/* METRICS */
-
-.metrics-section{
-
-  padding-top:35px !important;
-
-  padding-bottom:35px !important;
-}
-
-
-
-/* PROCESS */
-
-.process-section{
-
-  padding-top:35px !important;
-
-  padding-bottom:35px !important;
-}
-
-
-
-/* CONTACT */
-
-.contact-section{
-
-  padding-top:30px !important;
-
-  padding-bottom:10px !important;
-}
-
-
-
-/* CONTACT GRID */
-
-.contact-container{
-
-  gap:24px !important;
-
-  align-items:center !important;
-}
-
-
-
-/* PHONE */
-
-.phone-wrapper{
-
-  transform:scale(0.82);
-
-  margin-top:-60px;
-
-  margin-bottom:-100px;
-}
-
-
-
-/* FORM */
-
-.contact-form-panel{
-
-  padding:24px !important;
-}
-
-
-
-/* FOOTER */
-
-footer{
-
-  padding:10px !important;
-
-  margin-top:0 !important;
-}
-
-
-
-/* REMOVE RANDOM EXTRA SPACING */
-
-p,
-h1,
-h2,
-h3,
-h4{
-
-  margin-top:0;
-}
-
-
-
-/* MOBILE */
-
-@media (max-width:768px){
-
-  html{
-
-    font-size:80%;
-  }
-
-
-  section{
-
-    padding-top:28px !important;
-
-    padding-bottom:28px !important;
-  }
-
-
-  .hero,
-  .about-hero,
-  .services-hero{
-
-    padding-top:90px !important;
-
-    padding-bottom:10px !important;
-  }
-
-
-  .phone-wrapper{
-
-    transform:scale(0.58);
-
-    margin-top:-110px;
-
-    margin-bottom:-150px;
-  }
-
-
-  .contact-section{
-
-    padding-bottom:0px !important;
-  }
-
-}
 /* =========================================
    HARD HEIGHT RESET
 ========================================= */
@@ -3362,6 +2968,400 @@ footer{
   .about-image img{
 
     max-height:320px !important;
+  }
+
+}
+/* =========================================
+   REMOVE FAKE SCROLL SPACE
+========================================= */
+
+
+/* PHONE WRAPPER */
+
+.phone-wrapper{
+
+  height:420px !important;
+
+  overflow:hidden;
+}
+
+
+
+/* SERVICES CONTACT */
+
+.contact-section{
+
+  overflow:hidden;
+}
+
+
+
+/* HERO */
+
+.hero,
+.about-hero,
+.services-hero{
+
+  min-height:auto !important;
+}
+
+
+
+/* REMOVE EXTRA BOTTOM SPACE */
+
+body{
+
+  overflow-x:hidden;
+}
+/* =========================================
+   FINAL COMPACT SCALE SYSTEM
+========================================= */
+
+
+/* ABOUT PAGE BOTTOM BOXES */
+
+.metrics-grid{
+
+  gap:18px !important;
+}
+
+
+.metric-card{
+
+  padding:22px !important;
+
+  min-height:180px !important;
+}
+
+
+.metric-card h3{
+
+  font-size:2.8rem !important;
+}
+
+
+.metric-card p{
+
+  font-size:0.92rem !important;
+
+  line-height:1.5 !important;
+}
+
+
+
+/* CONTACT SECTION */
+
+.contact-container{
+
+  transform:scale(0.90);
+
+  transform-origin:center top;
+
+  margin-top:-40px !important;
+
+  margin-bottom:-120px !important;
+}
+
+
+
+/* PHONE */
+
+.phone-wrapper{
+
+  transform:scale(0.72) !important;
+
+  transform-origin:center;
+
+  margin-top:-120px !important;
+
+  margin-bottom:-180px !important;
+}
+
+
+
+/* PHONE SCREEN */
+
+.phone-screen{
+
+  padding:18px !important;
+}
+
+
+
+/* PHONE PRICING CARDS */
+
+.pricing-card{
+
+  padding:16px !important;
+
+  margin-bottom:12px !important;
+}
+
+
+.pricing-card h2{
+
+  font-size:2rem !important;
+}
+
+
+.pricing-card li{
+
+  font-size:0.82rem !important;
+}
+
+
+
+/* CONTACT FORM */
+
+.contact-form-panel{
+
+  padding:20px !important;
+}
+
+
+.contact-form-panel input,
+.contact-form-panel textarea{
+
+  padding:12px !important;
+}
+
+
+
+/* PROCESS SECTION */
+
+.process-grid{
+
+  gap:18px !important;
+}
+
+
+.process-card{
+
+  padding:20px !important;
+}
+
+
+
+/* HERO IMAGE */
+
+.hero-image img{
+
+  max-height:500px !important;
+}
+
+
+
+/* ABOUT IMAGE */
+
+.about-image img{
+
+  max-height:460px !important;
+}
+
+
+
+/* FOOTER */
+
+footer{
+
+  padding:6px !important;
+}
+
+
+
+/* MOBILE */
+
+@media (max-width:768px){
+
+  .contact-container{
+
+    transform:none !important;
+
+    margin:0 !important;
+  }
+
+
+  .phone-wrapper{
+
+    transform:scale(0.55) !important;
+
+    margin-top:-160px !important;
+
+    margin-bottom:-240px !important;
+  }
+
+
+  .metric-card{
+
+    min-height:auto !important;
+  }
+
+}/* =========================================
+   FINAL POLISH / MINIMAL SCROLL
+========================================= */
+
+
+/* HERO */
+
+.hero{
+
+  padding-top:100px !important;
+
+  padding-bottom:25px !important;
+
+  gap:30px !important;
+}
+
+
+/* ABOUT HERO */
+
+.about-hero{
+
+  padding-top:105px !important;
+
+  padding-bottom:20px !important;
+}
+
+
+/* SERVICES HERO */
+
+.services-hero{
+
+  padding-top:100px !important;
+
+  padding-bottom:10px !important;
+}
+
+
+/* BIG BACKGROUND WORDS */
+
+.hero::after,
+.about-hero::before,
+.contact-section::before,
+.process-section::before{
+
+  font-size:7rem !important;
+
+  opacity:0.06;
+}
+
+
+
+/* ABOUT */
+
+.about-row{
+
+  padding-top:35px !important;
+
+  padding-bottom:35px !important;
+
+  gap:40px !important;
+}
+
+
+
+/* METRICS */
+
+.metrics-section{
+
+  padding-top:35px !important;
+
+  padding-bottom:35px !important;
+}
+
+
+
+/* CONTACT */
+
+.contact-section{
+
+  padding-top:20px !important;
+
+  padding-bottom:0px !important;
+}
+
+
+
+/* CONTACT GRID */
+
+.contact-container{
+
+  transform:scale(0.88);
+
+  transform-origin:center top;
+}
+
+
+
+/* PHONE */
+
+.phone-wrapper{
+
+  transform:scale(0.62) !important;
+
+  margin-top:-140px !important;
+
+  margin-bottom:-240px !important;
+
+  height:320px !important;
+}
+
+
+
+/* PHONE FRAME */
+
+.phone-frame{
+
+  animation:none !important;
+}
+
+
+
+/* FOOTER */
+
+footer{
+
+  padding:4px !important;
+}
+
+
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+  .hero,
+  .about-hero,
+  .services-hero{
+
+    padding-top:85px !important;
+  }
+
+
+  .hero::after,
+  .about-hero::before,
+  .contact-section::before,
+  .process-section::before{
+
+    font-size:4rem !important;
+  }
+
+
+  .phone-wrapper{
+
+    transform:scale(0.48) !important;
+
+    margin-top:-210px !important;
+
+    margin-bottom:-320px !important;
+
+    height:220px !important;
+  }
+
+
+  .contact-container{
+
+    transform:none !important;
   }
 
 }
