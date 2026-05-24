@@ -230,7 +230,7 @@ nav ul li a:hover,
 
 .hero{
 
-  min-height:72vh;
+  min-height:auto;
 
   display:grid;
 
@@ -2636,7 +2636,7 @@ section{
 
 .hero{
 
-  min-height:62vh !important;
+  min-height:auto !important;
 
   padding-top:120px !important;
 
@@ -2750,4 +2750,66 @@ footer{
   transition:0.3s ease !important;
 
   animation:none !important;
+}
+/* =========================================
+   DEPLOYMENT OVERFLOW FIX
+========================================= */
+
+html,
+body{
+
+  overflow-x:hidden;
+}
+
+
+/* GLOBAL SECTION TIGHTEN */
+
+section{
+
+  padding-top:60px !important;
+
+  padding-bottom:60px !important;
+}
+
+
+/* HERO */
+
+.hero,
+.about-hero,
+.services-hero{
+
+  min-height:auto !important;
+
+  padding-top:120px !important;
+
+  padding-bottom:40px !important;
+}
+
+
+/* REMOVE HUGE GAPS */
+
+.contact-section,
+.process-section,
+.metrics-section,
+.gain-section{
+
+  padding-top:55px !important;
+
+  padding-bottom:55px !important;
+}
+
+
+/* PHONE */
+
+.phone-wrapper{
+
+  transform:scale(0.95);
+}
+
+
+/* FOOTER */
+
+footer{
+
+  padding:14px !important;
 }
